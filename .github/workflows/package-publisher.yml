@@ -15,7 +15,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@space-lab-org'
       - run: npm install
-      - run: npm build
+      - run: npm run build
         env:
           NODE_AUTH_TOKEN: ${{secrets.FABRIK_TOKEN}}
 
