@@ -3,7 +3,7 @@ name: Publish Fabrik Package
 on:
   push:
     branches: 
-      - "master"
+      - master
 
 jobs: 
   publish-gpr:
