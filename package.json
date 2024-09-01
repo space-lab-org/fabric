@@ -1,7 +1,7 @@
 {
   "name": "@space-lab-org/fabrik",
   "version": "0.0.0",
-  "type": "lib",
+  "type": "module",
   "files": [
     "dist"
   ],
