@@ -13,9 +13,6 @@
       "require": "./dist/fabrik.umd.cjs"
     }
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@space-lab-org/fabrik"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
