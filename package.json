@@ -11,8 +11,10 @@
     ".": {
       "import": "./dist/fabrik.js",
       "require": "./dist/fabrik.umd.cjs"
-    }
+    },
+   "./dist/style.css": "./dist/style.css"
   },
+  "sideEffects": false,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
