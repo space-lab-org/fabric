@@ -1,5 +1,5 @@
 {
-  "name": "fabrik",
+  "name": "@space-lab-org/fabrik",
   "version": "0.0.0",
   "type": "lib",
   "files": [
@@ -14,7 +14,7 @@
     }
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@space-lab-org"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "dev": "vite",
