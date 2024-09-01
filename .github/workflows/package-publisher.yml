@@ -2,7 +2,8 @@ name: Publish Fabrik Package
 
 on:
   push:
-    branches: ["master"]
+    branches: 
+      - "master"
 
 jobs: 
   publish-gpr:
