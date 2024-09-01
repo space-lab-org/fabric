@@ -1,16 +1,16 @@
 {
-  "name": "fabric",
+  "name": "fabrik",
   "version": "0.0.0",
   "type": "lib",
   "files": [
     "dist"
   ],
-  "main": "./dist/fabric.umd.cjs",
-  "module": "./dist/fabric.js",
+  "main": "./dist/fabrik.umd.cjs",
+  "module": "./dist/fabrik.js",
   "exports": {
     ".": {
-      "import": "./dist/fabric.js",
-      "require": "./dist/fabric.umd.cjs"
+      "import": "./dist/fabrik.js",
+      "require": "./dist/fabrik.umd.cjs"
     }
   },
   "publishConfig": {

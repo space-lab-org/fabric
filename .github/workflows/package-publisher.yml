@@ -1,4 +1,4 @@
-name: Publish fabric Package
+name: Publish Fabrik Package
 
 on:
   push:

@@ -1,4 +1,4 @@
-import { Button } from 'fabric'
+import { Button } from 'fabrik'
 
 function App() {
   return (

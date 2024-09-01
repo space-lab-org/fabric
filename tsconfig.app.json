@@ -6,7 +6,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "paths": {
-      "fabric": ["./lib/main.ts"]
+      "fabrik": ["./lib/main.ts"]
     },
 
     /* Bundler mode */
