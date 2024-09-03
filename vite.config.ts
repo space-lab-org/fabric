@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'path'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import dts from 'vite-plugin-dts'
+import { configDefaults, coverageConfigDefaults } from 'vitest/config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -26,11 +27,13 @@ export default defineConfig({
     globals: true,
     setupFiles: './lib/tests/setup.js',
     css: true,
+    exclude: [...configDefaults.exclude, './e2e-tests/*'],
     coverage: {
       // you can include other reporters, but 'json-summary' is required, json is recommended
       reporter: ['text', 'json-summary', 'json'],
       // If you want a coverage reports even if your tests are failing, include the reportOnFailure option
       reportOnFailure: true,
+      exclude: [...coverageConfigDefaults.exclude, './e2e-tests/*'],
     }
   },
   build: {
