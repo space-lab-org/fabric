@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'path'
@@ -6,7 +7,11 @@ import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths(), dts({ rollupTypes: true, tsconfigPath: './tsconfig.app.json', exclude: 'src' })],
+  plugins: [
+    react(), 
+    tsconfigPaths(), 
+    dts({ rollupTypes: true, tsconfigPath: './tsconfig.app.json', exclude: 'src' })
+  ],
   optimizeDeps: {
     include: ['**/*.scss'], // Include all .scss files
   },
@@ -15,6 +20,12 @@ export default defineConfig({
       // Enable CSS Modules for all .scss files
       localsConvention: 'camelCaseOnly',
     },
+  },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './lib/tests/setup.js',
+    css: true
   },
   build: {
     lib: {
