@@ -26,5 +26,5 @@
     /* Vitest */
     "types": ["vitest/globals", "vitest/jsdom"]
   },
-  "include": ["src", "lib"]
+  "include": ["src", "lib", "e2e-tests"]
 }
