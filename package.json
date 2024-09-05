@@ -1,6 +1,6 @@
 {
   "name": "@space-lab-org/fabrik",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "files": [
     "dist"
@@ -21,6 +21,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:docs": "tsc -b && vite build --config vite.config.docs.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "prebuild": "rm -rf dist",
